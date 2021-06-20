@@ -2,12 +2,9 @@ extends base.pug
 include mixins/video.pug
 
 block content 
-   h2 Welcome. Here you'll see the trending videos.
    each video in videos
     +video(video)
    else 
       li Sorry, There's no video.
 
-   input(placeholder="Write Here.")
-   button Send
 
